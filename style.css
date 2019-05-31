@@ -1,0 +1,521 @@
+html{
+	font-family: "Arial";
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+p{
+	margin: 0;
+}
+/* -------------------------------MENU */
+.logo{
+	margin: 0;
+	padding: 0;
+}
+	i{
+	color: #fff;
+} 
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+	float: right;
+
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+}
+ul li a:hover{
+	background: #fff;
+	opacity: 0.5;
+	color: #000;
+}
+
+ul ul{
+	position: absolute;
+	min-width: 200px;
+	color: #000;
+	background: #000;
+	opacity: 0.5;
+	display: none;
+}
+ul ul li{
+	display: block;
+	background: #000;
+	color: #fff;
+}
+
+ul li:hover ul{
+	display: block;
+}
+
+ul li i{
+	color: #292929;
+	float: right;
+	padding-left: 10px;
+}
+
+nav div{
+	background: lightgrey;
+	color: #292929;
+	font-size: 24px;
+	padding: 0.6em;
+	cursor: pointer;
+	display: none;
+}
+nav img{
+	margin-left: 5em;
+}
+nav ul{
+	margin-right: 5em;
+}
+#nav{
+	background-color: #000;
+	opacity: 0.7;
+}
+.header{
+	/* display: flex; */
+	flex-wrap: wrap;/* перенос строки */
+	justify-content: space-between; /* Прижимает содержимое к краям; */
+	align-items: center; /* Выравнивает по центру */
+	
+	background-image: url(img/main_img.png);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 30px;
+}
+.header .logo{
+	padding-left: 2em;
+	display: flex;
+}
+
+.content_main{
+	text-align: center;
+}
+.content_main h1 {
+	font-family: 'Great Vibes', cursive;
+	font-size: 60pt;
+	color: #fff;
+	font-weight: normal;
+	margin-top: 3em;
+}
+.content_main button{
+	margin-top: 7em;
+	width: 20%;
+	padding: 1em 0;
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+.content_main a{
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+/* ------------------------END MENU */
+/*-----------------------------------------------START-SLIDER */
+.slider{
+	max-width: 100%;
+	position: relative; /* ??? */
+	height: 100vh;
+	margin-bottom: 130px;
+	margin: auto;
+}
+/* Масштаб картинки відносно батьківського елементу */
+.slider .item img{
+	object-fit: cover;
+	width: 100%;
+	height: 100vh;
+}
+/* Кнопки prew & next */
+.slider .prev, .slider .next{
+	cursor: pointer;
+	position: absolute;
+	top:0;
+	top:50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+.slider .next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.slider .prev:hover, 
+.slider .next:hover{
+	background-color: rgba(112, 112, 112, 0.6);
+}
+.slideText{
+	position: absolute;
+	color: #fff;
+	font-size: 4em;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -50%);
+	text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+.slider_dots{
+	position: absolute;
+	bottom: 1em;
+    width: 100%;
+	text-align: center;
+	display: inline-block;
+} 
+
+.slider_dots_item{
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	margin: 0 2px;
+	background-color: #ddd;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, 
+.slider_dots_item:hover{
+	background-color: #aaa;
+}
+
+/* Анимация слайдов */
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+/* -----------------------------------------END SLIDER */
+/* -- -----------------------------Paragraph of list Start  */
+.paragraph{
+	text-align: center;
+}
+.par_item{
+	padding-top: 4em;
+	width: 29%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin: 0 1em ; 
+	border: 2px #000;
+	/* border-right-style: dotted;
+		border-left-style: dotted; */	
+	height: 50vh;
+}
+.par_item:hover{
+	border: 1px solid;
+}
+/* .par_item{
+	 */
+/* .par_conteiner:nth-child(2){
+	border: 1px solid #000;
+}  */
+
+/* .par_conteiner a{
+	text-decoration: none;
+	color: #f8b864;
+	font-size: 20pt;
+} */
+.par_item_1 a h3{
+	font-family: 'Great Vibes', cursive;
+	font-size: 30pt;
+	font-weight: normal;
+	border: 1px solid ;
+	color: #f8b864;
+	padding: 0.3em;
+	border-radius: 50%;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+.par_item a{
+	text-decoration: none;
+}
+
+
+/* --------------------------------MAKE RESERV START*/
+.make_reserv{
+	text-align: center;
+	background-image: url(img/menu_middle.png);
+	width: 100%;
+	height: 80vh;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 0;
+	padding: 0;
+}
+.reserv_top{
+	text-align: center;
+	margin-top:0;
+	padding: 1em;
+	padding-top: 5em;
+}
+
+.reserv_top p{
+	margin: 0;
+	font-family: Arial, sans-serif;
+	font-size: 50pt;
+	font-weight: bold;
+
+}
+
+.reserv_top span{
+	font-family: 'Great Vibes', cursive;
+	font-size: 50pt;
+	font-weight: normal;
+}
+.reserv_top button{
+	color: #fff;
+	background: #f8b864;
+	padding: 0.5em 4em;
+	border: none;
+	font-family: Arial, sans-serif;
+	font-size: 15pt;
+	font-weight: bold;
+	margin-top: 3em;
+}
+.reserv_bott p{
+}
+.reserv_bott h4{
+	margin-top: 20vh;
+}
+.reserv_bott span{
+	font-weight: bold;
+}
+.reserv_it_1, .reserv_it_2, .reserv_it_3{
+	width: 33.33%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:#fff;
+	height: 50vh;
+	font-family: Arial, sans-serif;
+	font-size: 20pt;
+	margin: 0;
+}
+.reserv_it_1{
+	background-image: url(img/menu_1.png);
+}
+.reserv_it_2{
+	background-image: url(img/menu_2.png);
+}
+.reserv_it_3{
+	background-image: url(img/menu_3.png);
+}
+
+
+
+
+/* --------------------Menu With Item Start---------------------*/
+/* .item_menu_photo{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	background-color: red;
+	text-align: center;
+}
+.item_menu_photo img{
+	width: 100%;
+}
+.item_menu_text{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	background-color: red;
+	text-align: center;
+}
+
+ */
+/* -----------------------------------contact*/
+
+
+/* ---------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+---------------------------------------------menus--------------------------------- */
+#section_menus h1{
+	text-align: center;
+	width: 100%;
+}
+.menus-item-1{
+	display: flex;
+	height: 100vh;
+}
+.main-menu-1{
+	display: flex;
+	width: 40%;
+}
+.main-menu-01{
+	display: flex;
+	width: 60%;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+	/* ------------------------------MEDIA FOR SLIDER start */
+	nav div{
+		display: block;
+	}
+	ul{
+		display: none;
+		position: static;
+		background: #e3e3e3;
+	}
+
+	ul li{
+		display: block;
+	}
+
+	ul ul{
+		position: static;
+		background: #e3e3e3;
+	}
+	.logotype a{
+		display: none;
+	}
+/* ------------------------------MEDIA FOR SLIDER end */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+-----------------------------------------SLIDER
+
+
+
+
+
+
+
+
+
+              			Для первого
+.wrap{        
+	display: flex;
+	justify-content: center;
+	background-image: url(img/food_back.jpg);
+	width: 100%;
+}
+.wrap > div{   
+   width: 45%;
+}
+.wrap > .left{
+   background: #f8b864;
+}
+.wrap > .right{
+  text-align: -webkit-center;
+}
+.wrap > .right img{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+						Для второго
+.wrap2{        
+	display: flex;
+	
+}
+.wrap2 > div{   
+   width: 45%;  
+   
+}
+.wrap2 > .left{
+   background: #f8b864;
+}
+.wrap2 > .right{
+  text-align: -webkit-center;
+}
+.wrap2 > .right img{
+	width: 100%;
+} */

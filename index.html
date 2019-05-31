@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cafe food</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<header class="header">
+	
+	<nav>
+		<div>
+			<span>&#8251</span>
+		</div>
+		<a href="index.html"><img src="img/logo.png" alt="img"></a>
+		<ul>
+
+			<li><a href="about_us.html">ABOUT US</a></li>
+			<li><a href="menus.html">MENUS</a></li>
+			<li><a href="upcoming_events.html">EVENTS <i class="fa fa-sort-desc">&#9660</i></a>
+				<ul>
+					<li><a href="upcoming_events.html">UPCOMING EVENTS</a></li>
+					<li><a href="gift_cards.html">GIFT CARDS</a></li>
+				</ul>
+			</li>
+			<li><a href="reservations.html">RESERVATION</a></li>
+			<li><a href="contact.html">CONTACT US</a></li>
+			
+		</ul>
+	</nav>
+	<div>
+		<div class="content_main">
+			<h1>Prepare The Best Dishes</h1>
+			<a href="#menu"><button>Read More</button></a>
+		</div>
+	</div>
+	</header>
+	
+<!-- -------------------------------------S L I D E R -->
+	<div class="slider">
+		<div class="item">
+			<img src="img/photo_rest_1.jpg" alt="1 slide">
+			<div class="slideText">Restaurant Rooms</div>
+		</div>
+		<div class="item">
+			<img src="img/photo_rest_2.jpg" alt="2 slide">
+			<div class="slideText">Restaurant Rooms</div>
+		</div>
+		<div class="item">
+			<img src="img/photo_rest_3.jpg" alt="3 slide">
+			<div class="slideText">Restaurant Rooms</div>
+		</div>
+		<div class="item">
+			<img src="img/photo_rest_4.jpg" alt="4 slide">
+			<div class="slideText">Restaurant Rooms</div>
+		</div>
+		<a class="prev" onclick="minusSlide()">&#9664</a>
+		<a class="next" onclick="plusSlide()">&#9654</a>
+		<div class="slider_dots">
+			<span class="slider_dots_item" onclick="currentSlide(1)"></span>
+			<span class="slider_dots_item" onclick="currentSlide(2)"></span>
+			<span class="slider_dots_item" onclick="currentSlide(3)"></span>
+			<span class="slider_dots_item" onclick="currentSlide(4)"></span>
+		</div> 
+	</div>
+
+	
+
+	<!---------------------------------------------------END SLIDER-->
+
+	<!-- -----------------------------Paragraph of list Start -->
+	
+	<div class="paragraph">  <a name="menu"></a>
+		<div class="par_item">
+			<div class="par_img">
+				<img src="img/like.png" alt="photo">
+			</div>
+			<div class="par_item_1">
+				<a href="menus.html"><h3>View our Menu</h3></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptatem, ipsam impedit minus quis deserunt pariatur voluptate quam odit.</p>
+				<!-- <a href="menus.html">Learn more</a> -->
+			</div>
+		</div>
+		<div class="par_item">
+			<div class="par_img">
+				<img src="img/time.png" alt="photo">
+			</div>
+			<div class="par_item_1">
+				<a href="reservations.html"><h3>Reservation</h3></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptatem, ipsam impedit minus quis deserunt pariatur voluptate quam odit.</p>
+		 		<!-- <a href="reservations.html">Learn more</a> -->
+			</div>
+		</div>
+		<div class="par_item">
+			<div class="par_img">
+				<img src="img/knife.png" alt="photo">
+			</div>
+			<div class="par_item_1">
+				<a href="upcoming_events.html"><h3>Events</h3></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptatem, ipsam impedit minus quis deserunt pariatur voluptate quam odit.</p>
+		 		<!-- <a href="upcoming_events.html">Learn more</a> -->
+			</div>
+		</div>
+	</div>
+
+<!-- par_conteiner -->
+
+
+	
+ 	<section class="make_reserv">
+		 <div class="reserv_top">
+		 	<span>Make a</span>
+		 	<p>RESERVATION</p>
+		 	<a href="reservations.html"><button>MAKE A RESERVATION</button></a>
+		 </div>
+		 	
+	</section>
+	<div class="reserv_bott">
+		 <div class="reserv_it_1">
+			<h4>CHICKEN FOOD</h4>
+			<p>From<p>
+			<p><span>$10.99</span></p>
+		 </div><!-- 
+		  --><div class="reserv_it_2">
+		  	<h4>PIZZA SPECIALS</h4>
+		  	<p>From<p>
+			<p><span>$10.99</span></p>
+		  </div><!-- 
+		  --><div class="reserv_it_3">
+		  	<h4>PRECIOUS WINE</h4>
+		  	<p>From<p>
+			<p><span>$10.99</span></p>
+		  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 	<div class="menu_with_item">
+	<div class="item_menu_photo"><img src="img/food_1.png" alt="Photo"></div><div class="item_menu_text">50</div><div class="item_menu_text">50</div><div class="item_menu_photo">50</div>
+
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------------------script for list-------------------------->
+
+<script type="text/javascript">
+	$("nav div").click(function() {
+        $("ul").slideToggle();
+        $("ul ul").css("display", "none");
+});
+
+    $("ul li").click(function() {
+        $("ul ul").slideUp();
+        $(this).find("ul").slideToggle();
+    });
+
+    $(window).resize(function() {
+        if($(window).width() > 768){
+            $("ul").removeAttr('style');
+        }
+    });
+</script>
+
+<script src="main.js"></script>
+
+</body>
+</html>
