@@ -2,9 +2,59 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Reservations</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
-	Reserv
+	<nav id="nav">
+		<div class="burger">
+			<span>&#8251</span>
+		</div>
+		<a href="index.html"><img src="img/logo.png" alt="img"></a>
+		<ul>
+			<li><a href="index.html">ABOUT US</a></li>
+			<li><a href="menus.html">MENUS</a></li>
+			<li><a href="events.html">EVENTS <i class="fa fa-sort-desc">&#9660</i></a>
+				<ul>
+					<li><a href="events.html">UPCOMING EVENTS</a></li>
+					<li><a href="gift_cards.html">GIFT CARDS</a></li>
+				</ul>
+			</li>
+			<li><a href="reservations.html">RESERVATION</a></li>
+			<li><a href="contact.html">CONTACT US</a></li>	
+		</ul>
+	</nav>
+	<h1 class="great_vibes">Reservations</h1>
+	<div class="reserv">
+		<div class="form-reserv">
+			<h2>Request a call back</h2>
+			<form action="#" onsubmit="book(this); return false;">
+				<input type="text" name="username" placeholder="Your Name" required>
+				<input type="text" name="phone" placeholder="+38(012)3456789" pattern="[\+]\d{2}[\(]\d{3}[\)]\d{7}" required>
+				<input type="submit" value="Call Me">
+			</form>
+		</div>
+
+		<div class="reserv-image">
+			<img src="img/book.jpg" alt="image">
+		</div>
+		
+	</div>
+<script>
+	function book(form){
+		// console.log(form)
+		localStorage.setItem(new Date(), form.phone.value + ' ' + form.username.value);
+		alert('Thank you! We will call you!');
+		form.reset();
+	}
+</script>
+	
+<script src="js/menus.js"></script>
+
+
+
+
 </body>
 </html>

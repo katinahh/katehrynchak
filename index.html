@@ -12,18 +12,17 @@
 
 <header class="header">
 	
-	<nav>
-		<div>
+	 <nav id="nav">
+		<div class="burger">
 			<span>&#8251</span>
 		</div>
 		<a href="index.html"><img src="img/logo.png" alt="img"></a>
 		<ul>
-
-			<li><a href="about_us.html">ABOUT US</a></li>
+			<li><a href="index.html">ABOUT US</a></li>
 			<li><a href="menus.html">MENUS</a></li>
-			<li><a href="upcoming_events.html">EVENTS <i class="fa fa-sort-desc">&#9660</i></a>
+			<li><a href="events.html">EVENTS <span class="fa fa-sort-desc">&#9660</span></a>
 				<ul>
-					<li><a href="upcoming_events.html">UPCOMING EVENTS</a></li>
+					<li><a href="events.html">UPCOMING EVENTS</a></li>
 					<li><a href="gift_cards.html">GIFT CARDS</a></li>
 				</ul>
 			</li>
@@ -100,7 +99,7 @@
 				<img src="img/knife.png" alt="photo">
 			</div>
 			<div class="par_item_1">
-				<a href="upcoming_events.html"><h3>Events</h3></a>
+				<a href="events.html"><h3>Events</h3></a>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptatem, ipsam impedit minus quis deserunt pariatur voluptate quam odit.</p>
 		 		<!-- <a href="upcoming_events.html">Learn more</a> -->
 			</div>
@@ -137,39 +136,9 @@
 		  </div>
 	</div>
 
-
-
-
-
-
-
-
-
-
-
-<!-- 	<div class="menu_with_item">
-	<div class="item_menu_photo"><img src="img/food_1.png" alt="Photo"></div><div class="item_menu_text">50</div><div class="item_menu_text">50</div><div class="item_menu_photo">50</div>
-
-</div>
- -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-------------------------------script for list-------------------------->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	$("nav div").click(function() {
         $("ul").slideToggle();
         $("ul ul").css("display", "none");
@@ -185,9 +154,10 @@
             $("ul").removeAttr('style');
         }
     });
-</script>
+</script> -->
 
 <script src="main.js"></script>
+<script src="js/menus.js"></script>
 
 </body>
 </html>

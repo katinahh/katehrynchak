@@ -1,72 +1,80 @@
 html{
-	font-family: "Arial";
-}
-body{
-	margin: 0;
+	font-family: "Arial", sans-serif;}
+
+*{
 	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
 }
+
 a{
 	text-decoration: none;
 }
 p{
 	margin: 0;
 }
+.great_vibes{
+	font: 60pt 'Great Vibes', cursive;
+	color: #f8b864;
+	margin: 0.5em;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+	font-weight: normal;
+}
+.arial{
+	font-family: Arial, sans-serif;
+}
 /* -------------------------------MENU */
 .logo{
-	margin: 0;
+	margin: 0; 
 	padding: 0;
 }
-	i{
-	color: #fff;
-} 
-
 ul{
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
 	position: relative;
 	float: right;
-
 }
 ul li{
 	display: inline-block;
 }
 ul li a{
 	color: #fff;
-	text-decoration: none;
 	padding: 15px;
 	display: block;
 }
 ul li a:hover{
-	background: #fff;
-	opacity: 0.5;
+	background-color: #fff;
 	color: #000;
 }
-
 ul ul{
 	position: absolute;
 	min-width: 200px;
 	color: #000;
 	background: #000;
-	opacity: 0.5;
 	display: none;
 }
 ul ul li{
 	display: block;
 	background: #000;
 	color: #fff;
-}
+} 
 
 ul li:hover ul{
 	display: block;
+	color: #000;
+	background: #fff;
 }
 
-ul li i{
+
+/*  ul li i{
 	color: #292929;
 	float: right;
 	padding-left: 10px;
-}
-
+} */
+ 
 nav div{
 	background: lightgrey;
 	color: #292929;
@@ -83,14 +91,35 @@ nav ul{
 }
 #nav{
 	background-color: #000;
-	opacity: 0.7;
+	opacity: 0.8;
+	padding: 0.5em 0;
+	opacity: none;
 }
+#nav ul ul li{
+	display: block;
+	color: #fff;
+}
+
+#nav ul ul: hover li{
+	background-color: #fff;
+	color: #000;
+}
+ #nav ul li:hover /* ul li:hover */{
+	background: grey;
+}
+#nav ul ul a{
+	background-color: grey;
+	color: #000;
+}
+#nav ul li ul:hover li {
+	background-color: white;
+	color: #000;
+}
+/* --------------------------------HEADER */
 .header{
-	/* display: flex; */
 	flex-wrap: wrap;/* перенос строки */
 	justify-content: space-between; /* Прижимает содержимое к краям; */
 	align-items: center; /* Выравнивает по центру */
-	
 	background-image: url(img/main_img.png);
 	width: 100%;
 	height: 100vh;
@@ -128,11 +157,10 @@ nav ul{
 	opacity: 0.7;
 }
 
-/* ------------------------END MENU */
-/*-----------------------------------------------START-SLIDER */
+/*---------------------------------START-SLIDER */
 .slider{
 	max-width: 100%;
-	position: relative; /* ??? */
+	position: relative;
 	height: 100vh;
 	margin-bottom: 130px;
 	margin: auto;
@@ -158,12 +186,10 @@ nav ul{
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
 }
-
 .slider .next{
 	right: 0;
 	border-radius: 3px 0 0 3px;
 }
-
 .slider .prev:hover, 
 .slider .next:hover{
 	background-color: rgba(112, 112, 112, 0.6);
@@ -195,7 +221,6 @@ nav ul{
 	display: inline-block;
 	transition: background-color 0.6s ease;
 }
-
 .active, 
 .slider_dots_item:hover{
 	background-color: #aaa;
@@ -227,7 +252,7 @@ nav ul{
         opacity: 1
     }
 }
-/* -----------------------------------------END SLIDER */
+
 /* -- -----------------------------Paragraph of list Start  */
 .paragraph{
 	text-align: center;
@@ -247,20 +272,9 @@ nav ul{
 .par_item:hover{
 	border: 1px solid;
 }
-/* .par_item{
-	 */
-/* .par_conteiner:nth-child(2){
-	border: 1px solid #000;
-}  */
-
-/* .par_conteiner a{
-	text-decoration: none;
-	color: #f8b864;
-	font-size: 20pt;
-} */
 .par_item_1 a h3{
 	font-family: 'Great Vibes', cursive;
-	font-size: 30pt;
+	font-size: 24pt;
 	font-weight: normal;
 	border: 1px solid ;
 	color: #f8b864;
@@ -274,8 +288,6 @@ nav ul{
 .par_item a{
 	text-decoration: none;
 }
-
-
 /* --------------------------------MAKE RESERV START*/
 .make_reserv{
 	text-align: center;
@@ -302,7 +314,6 @@ nav ul{
 	font-weight: bold;
 
 }
-
 .reserv_top span{
 	font-family: 'Great Vibes', cursive;
 	font-size: 50pt;
@@ -318,6 +329,7 @@ nav ul{
 	font-weight: bold;
 	margin-top: 3em;
 }
+/*=============3 BLOCKS OF RESERVATIONS=========*/
 .reserv_bott p{
 }
 .reserv_bott h4{
@@ -348,53 +360,298 @@ nav ul{
 .reserv_it_3{
 	background-image: url(img/menu_3.png);
 }
-
-
-
-
-/* --------------------Menu With Item Start---------------------*/
-/* .item_menu_photo{
-	display: inline-block;
-	vertical-align: top;
-	width: 50%;
-	background-color: red;
-	text-align: center;
+.reserv_it_1:hover{
+	border: 3px solid #000;
 }
-.item_menu_photo img{
-	width: 100%;
+.reserv_it_2:hover{
+	border: 3px solid #000;
 }
-.item_menu_text{
-	display: inline-block;
-	vertical-align: top;
-	width: 50%;
-	background-color: red;
-	text-align: center;
+.reserv_it_3:hover{
+	border: 3px solid #000;
 }
-
- */
-/* -----------------------------------contact*/
-
 
 /* ---------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
----------------------------------------------menus--------------------------------- */
-#section_menus h1{
+------------------------menus--------------------------------- */
+/* =================MENUS 02/06/19 =============*/
+.conteiner h1{
+	border-bottom: 2px solid #f8b864;
+}
+#menus-container{
+	margin: 0 auto;
+	width: 70%;
+	display: flex;
+}
+.container-menu-images{
+	background-image: url(img/img-menu-3.jpg);
+	background-repeat: no-repeat;
+	width: 40%;
+	background-position: center center;
+	height: 80vh;
+}
+.dish{
+	width: 60%;
+	height: 60vh;
+	display: grid;
+	grid-template-columns: 6fr 1fr;
+	border: 3px solid #ebebeb;
+	float: right;
+	align-items: center;
+	margin-top: 5%;
+	margin-left: 0.5%;
+	box-shadow: 7px 7px 12px -2px rgba(56,41,56,1);
+}
+.conteiner h2{
+	margin-top: 1em;
+	font-family: Arial, sans-serif;
+	font-size: 30pt;
+	font-weight: normal;
+	text-align: right;
+	margin-right: 4em;
+}
+.dish-data span{
+	font-family: Arial, sans-serif;
+	font-size: 15pt;
+	font-weight: bold;
+}
+.dish-data p{
+	margin-left: 2em;
+}
+.second-dish{
+	margin-top: 7%;
+}
+/* ========================BLOCK-MENU-2=======*/
+#menus-container-2{
+	margin: 0 auto;
+	width: 70%;
+	display: flex;
+}
+.container-menu-images-2{
+	background-image: url(img/img-menu-2.jpg);
+	background-repeat: no-repeat;
+	width: 40%;
+	background-position: center center;
+	height: 80vh;
+	margin-left: 0.5%;
+}
+.container-menu-images-3{
+	background-image: url(img/img-menu-1.jpg);
+	height: 75vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============E V E N T S==================*/
+#mainEvents{
+	background-image: url(img/events.jpg);
+	width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#mainEvents h1{
 	text-align: center;
+	font: 50pt 'Great Vibes', cursive;
+	color: #f8b864;
+	margin: 0.5em;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.events{
+	width: 80%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+.events img{
+	width: 25%;
+	height: 40%;
+}
+.events_type{
+	float: right;
+	text-align: start;
+	color: #fff;
+	width: 60%;
+	height: 40%;
+	margin-left: 1em;
+	background-color: rgba(0, 0, 0, 0.6);
+	
+}
+.events_type h2{
+	margin: 0;
+	font: 30pt 'Arial', sans-serif;
+	text-shadow: 1px 1px 1px #000;
+	margin-bottom: 0.5em;
+}
+.events_type p{
+	font: 20pt 'Arial', sans-serif;
+	text-shadow: 1px 1px 1px #000;
+	margin-bottom: 0.5em;
+}
+.events_type label{
+	text-align: center;
+}
+.events_first{
+	display: none;
+}
+.events_first + label ~ div{
+    display: none;
+}
+.events_first + label {
+    border-bottom: 1px dotted green;
+    padding: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+.events_first:checked + label {
+    color: #fff;
+    border-bottom: 0;
+}
+.events_first:checked + label + div {
+    display: block; 
+    background: #efefef;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px; 
+    color: #000;
+}
+.events {
+    margin: 5% 10%;
+}
+
+/* ==========================GIFT-CARD=========*/
+.gift_body{
+	background-image: url(img/back-gift.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	/* height: 100vh; */
+}
+.gift_body h1{
+	text-align: center;
+	font: 50pt 'Great Vibes', cursive;
+	color: #f8b864; 
+	margin: 0.5em;
+	text-shadow: 1px 1px 1px #000; /*            +++ */
+
+}
+.main_gift{
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+.gift_price{
+	width: 30%;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 1px solid #000;
+	border-radius: 10%;
+	padding-top: 5%;
+	margin-right: 1em;
+}
+.gift_price p{
+	margin-bottom: 1em;
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+}
+.gift_price p, h2{
+	margin-bottom: 1em;
+}
+.gift_price span{
+	display: block;
+	font: 20pt 'Lobster Two', cursive;
+
+}
+.gift_type{
+	width: 50%;
+	float: right;
+}
+.gift_type img{
+	width: 100%;
+	height: 100%;
+	border-radius: 7%;	
+}
+.gift_price button{
+	padding: 1.4em 6em;
+	border-radius: 10%;
+	background-color: #f8b864;
+	border: 0px;
+	cursor: pointer;
+}
+.gift_price button:hover{
+	box-shadow: 5px 5px 5px 0px rgba(196,183,118,1);
+}
+/*================R E S E R V A T I O N S=============*/
+.form-reserv h2{
+	font: 30pt 'Arial', sans-serif;
+	margin-top: 10%;
+}
+.reserv{
+	text-align: center;
+	font-weight: bold;
 	width: 100%;
 }
-.menus-item-1{
-	display: flex;
-	height: 100vh;
+.reserv-image img{
+	width: 100%;
+	height: auto;
 }
-.main-menu-1{
-	display: flex;
+.form-reserv{
+	border: 1px solid #000;
 	width: 40%;
+	height: 55vh;
+	margin: 0 auto;
+	display: inline-block;
+
 }
-.main-menu-01{
-	display: flex;
-	width: 60%;
+.form-reserv form{
+	margin-bottom: 1em;
+	box-sizing: border-box;
 } 
 
+input[type=text]{
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* float: right; */
+}
+
+.reserv-image{
+	float: right;
+	width: 50%;
+}
 
 
 
@@ -412,6 +669,65 @@ nav ul{
 
 
 
+
+
+/* -----------------------------------CONTACTS*/
+.img-contact{
+	background-image: url(img/photo_rest_1.jpg);
+	width: 100%;
+	height: 93vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+#map{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.maps-info{
+	width: 30%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.6;
+	padding-left: 1%;
+}
+.maps{
+	width: 40%;
+	height: 100%;
+}
+.maps iframe{
+	width: 100%;
+	height: 60vh;
+}
+.img-contact h1{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	color: #fff;
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	font-size: 50pt;
+	color: #f8b864;
+	margin: 0.5em;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+	font-weight: normal;
+	box-shadow: 7px 7px 12px -2px rgba(56,41,56,1);
+}
+.maps-info h2{
+	font-family: 'Fjalla One', sans-serif;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: normal;
+}
+.maps-info p{
+	font-family: 'Fjalla One', sans-serif;
+	color: #fff;
+	font-size: 15pt;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 0.3em;
+}
+/* ----------------------------------M E D I A */
 
 @media(max-width: 768px){
 	/* ------------------------------MEDIA FOR SLIDER start */
@@ -422,6 +738,7 @@ nav ul{
 		display: none;
 		position: static;
 		background: #e3e3e3;
+		width: 80%;
 	}
 
 	ul li{
@@ -435,87 +752,137 @@ nav ul{
 	.logotype a{
 		display: none;
 	}
+	nav img{
+		display: none;
+	}
 /* ------------------------------MEDIA FOR SLIDER end */
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	nav div{
+		display: block;
+	}
+	ul{
+		display: none;
+		position: static;
+		background: #e3e3e3;
+		width: 80%;
+	}
+
+	ul li{
+		display: block;
+	}
+	ul li a{
+		color: #000;
+	}
+
+	ul ul{
+		position: static;
+		background: #e3e3e3;
+	}
+	.logotype a{
+		display: none;
+	}
+	nav img{
+		display: none;
+	}
 
 
+		.content_main h1{
+			font-size: 30pt;
+		}
+		.content_main button{
+			display: none;
+		}
+		.slideText{
+			font-size: 20pt;
+			margin-top: 4em;
+		}
+		.par_item{
+			display: block;
+			width: 90%;
+			text-align: center;
+		}
+		.reserv_top span, .reserv_top p{
+			font-size: 30pt;
+		}
+		.reserv_bott{
+			
+		}
+		.reserv_it_1, .reserv_it_2, .reserv_it_3{
+			display: block;
+			width: 100%;
+			height: 60vh;
+		}
+		.reserv_bott h4, .reserv_bott p, .reserv_bott span{
+			font-size: 20pt;
+			margin: 0;
+			padding: 0;
+		}
+		.reserv_bott h4{
+			padding-top: 20%;
+		}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *{
-	margin: 0;
-	padding: 0;
+.main_gift{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
 }
-
-
-
------------------------------------------SLIDER
-
-
-
-
-
-
-
-
-
-              			Для первого
-.wrap{        
-	display: flex;
-	justify-content: center;
-	background-image: url(img/food_back.jpg);
+.gift_price{
+	display: block;
+	width: 80%;
+	height: 50%;
+	margin: 0 auto;
+}
+.gift_type{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+.events{
+	width: 80%;
+}
+.events img{
+	display: none;
+}
+.events_type{
+width: 100%;
+}
+.container-menu-images{
+	display: none;
+}
+.container-menu-images-2{
+	display: none;
+}
+.menus-container{
 	width: 100%;
 }
-.wrap > div{   
-   width: 45%;
-}
-.wrap > .left{
-   background: #f8b864;
-}
-.wrap > .right{
-  text-align: -webkit-center;
-}
-.wrap > .right img{
+.dish{
 	width: 100%;
-	margin: 0;
-	padding: 0;
 }
-						Для второго
-.wrap2{        
-	display: flex;
-	
-}
-.wrap2 > div{   
-   width: 45%;  
-   
-}
-.wrap2 > .left{
-   background: #f8b864;
-}
-.wrap2 > .right{
-  text-align: -webkit-center;
-}
-.wrap2 > .right img{
+
+/* REZERVATIONS */
+.reserv-image{
+	display: block;
 	width: 100%;
-} */
+}
+.form-reserv{
+	width: 100%;
+	height: 30vh;
+	border: none;
+}
+.reserv{
+	height: 100vh;
+}
+/* ---------------CONTACTS */
+.maps-info{
+	display: block;
+	width: 100%;
+}
+.maps{
+	display: block;
+	width: 100%;
+}
+}
+

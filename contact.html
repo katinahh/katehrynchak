@@ -2,26 +2,54 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Contact</title>
+	<title>Contacts</title>
 	 <meta name="viewport" content="initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   
-  </head>
-  <body>
-   <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
-        var setting = {"height":534,"width":803,"zoom":18,"queryString":"Mont Blanc, улица Соборная, Винница, Винницкая область, Украина","place_id":"ChIJvcYB2npbLUcR5hpDL29J6gU","satellite":false,"centerCoord":[49.23277689160777,28.471066593917847],"cid":"0x5ea496f2f431ae6","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"37812"};
-        var d = document;
-        var s = d.createElement('script');
-        s.src = 'https://1map.com/js/script-for-user.js?embed_id=37812';
-        s.async = true;
-        s.onload = function (e) {
-          window.OneMap.initMap(setting)
-        };
-        var to = d.getElementsByTagName('script')[0];
-        to.parentNode.insertBefore(s, to);
-      })();</script><a href="https://1map.com/map-embed?embed_id=37812">1map.com</a></div>
-  </body>
-</html>
-   
+</head>
+<body>
+    <nav id="nav">
+    <div class="burger">
+      <span>&#8251</span>
+    </div>
+    <a href="index.html"><img src="img/logo.png" alt="img"></a>
+    <ul>
+
+      <li><a href="index.html">ABOUT US</a></li>
+      <li><a href="menus.html">MENUS</a></li>
+      <li><a href="events.html">EVENTS <i class="fa fa-sort-desc">&#9660</i></a>
+        <ul>
+          <li><a href="events.html">UPCOMING EVENTS</a></li>
+          <li><a href="gift_cards.html">GIFT CARDS</a></li>
+        </ul>
+      </li>
+      <li><a href="reservations.html">RESERVATION</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>  
+    </ul>
+  </nav>
+  <div class="img-contact">
+      <h1>Contact Us</h1>
+      <section id="map">
+        <div class="maps-info">
+            <h2>Adress</h2>
+            <p>Vinnytsia, 34 Soborna street</p>
+            <h2>Phone</h2>
+            <p>+38(063)123-45-67<br>+38(063)123-45-68</p>
+            
+            <h2>E-mail</h2>
+            <p>cafe_food@gmail.com</p>
+            <h2>Opening Hours</h2>
+            <p><span>12.00 p.m. - 12.00 a.m.</span></p>
+        </div>
+        <div class="maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.298109836225!2d28.468582815687622!3d49.232836979325945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b7ada01c6bd%3A0x5ea496f2f431ae6!2sMont+Blanc!5e0!3m2!1sru!2sua!4v1559588459520!5m2!1sru!2sua" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </section>
+</div>
+<script src="js/menus.js"></script>   
+  
 </body>
 </html>

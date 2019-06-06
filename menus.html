@@ -5,35 +5,154 @@
 	<title>Menu</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
 	<nav id="nav">
-		<div>
+		<div class="burger">
 			<span>&#8251</span>
 		</div>
 		<a href="index.html"><img src="img/logo.png" alt="img"></a>
 		<ul>
 
-			<li><a href="about_us.html">ABOUT US</a></li>
+			<li><a href="index.html">ABOUT US</a></li>
 			<li><a href="menus.html">MENUS</a></li>
-			<li><a href="upcoming_events.html">EVENTS <i class="fa fa-sort-desc">&#9660</i></a>
+			<li><a href="events.html">EVENTS <i class="fa fa-sort-desc">&#9660</i></a>
 				<ul>
-					<li><a href="upcoming_events.html">UPCOMING EVENTS</a></li>
+					<li><a href="events.html">UPCOMING EVENTS</a></li>
 					<li><a href="gift_cards.html">GIFT CARDS</a></li>
 				</ul>
 			</li>
 			<li><a href="reservations.html">RESERVATION</a></li>
-			<li><a href="contact.html">CONTACT US</a></li>
-			
+			<li><a href="contact.html">CONTACT US</a></li>	
 		</ul>
 	</nav>
-	<section id="section_menus">
+	<div class="conteiner">
+			<h1 class="great_vibes">Menu</h1>
+			<h2>ANTIPASTI</h2>
+			<div id="menus-container">
+				<div class="container-menu-images"></div>
+				<div class="dish">
+						<div class="dish-data">
+						<p><span>Lorem ipsum dolor sit amet</span></p>
+						<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+						</div>
+						<div class="dish-price">8.50 $</div>
+					<div class="dish-data">
+					<p><span>Lorem ipsum dolor sit amet</span></p>
+					<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+					</div>
+					<div class="dish-price">9.00 $</div>
+						<div class="dish-data">
+						<p><span>Lorem ipsum dolor sit amet</span></p>
+						<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+						</div>
+						<div class="dish-price">9.50 $</div>
+					<div class="dish-data">
+					<p><span>Lorem ipsum dolor sit amet</span></p>
+					<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+					</div>
+					<div class="dish-price">10.00 $</div>
+						<div class="dish-data">
+						<p><span>Lorem ipsum dolor sit amet</span></p>
+						<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+						</div>
+						<div class="dish-price">8.50 $</div>
+					<div class="dish-data">
+					<p><span>Lorem ipsum dolor sit amet</span></p>
+					<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+					</div>
+					<div class="dish-price">14.00 $</div>
+						<div class="dish-data">
+						<p><span>Lorem ipsum dolor sit amet</span></p>
+						<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+						</div>
+						<div class="dish-price">13.50 $</div>
+				</div>
+			</div>
+			<h2>PIZZA</h2>
+			<div id="menus-container-2">
+				<div class="dish second-dish">
+					<div class="dish-data">
+					<p><span>Lorem</span></p>
+					<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+					</div>
+					<div class="dish-price">10.00 $</div>
+						<div class="dish-data">
+						<p><span>Lorem</span></p>
+						<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+						</div>
+						<div class="dish-price">12.50 $</div>
+					<div class="dish-data">
+					<p><span>Lorem</span></p>
+					<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+					</div>
+					<div class="dish-price">12.00 $</div>
+						<div class="dish-data">
+						<p><span>Lorem</span></p>
+						<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+						</div>
+						<div class="dish-price">12.50 $</div>
+					<div class="dish-data">
+					<p><span>Lorem</span></p>
+						<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+					</div>
+					<div class="dish-price">13.00 $</div>
+
+				</div>
+				<div class="container-menu-images-2"></div>
+			</div>
+
+			<h2>SECOND</h2>
+			<div id="menus-container">
+				<div class="container-menu-images container-menu-images-3"></div>
+				<div class="dish">
+						<div class="dish-data">
+						<p><span>Lorem ipsum dolor sit amet</span></p>
+						<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+						</div>
+						<div class="dish-price">18.00 $</div>
+					<div class="dish-data">
+					<p><span>Lorem ipsum dolor sit amet</span></p>
+					<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+					</div>
+					<div class="dish-price">27.00 $</div>
+						<div class="dish-data">
+						<p><span>Lorem ipsum dolor sit amet</span></p>
+						<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+						</div>
+						<div class="dish-price">20.00 $</div>
+					<div class="dish-data">
+					<p><span>Lorem ipsum dolor sit amet</span></p>
+					<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+					</div>
+					<div class="dish-price">23.00 $</div>
+						<div class="dish-data">
+						<p><span>Lorem ipsum dolor sit amet</span></p>
+						<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+						</div>
+						<div class="dish-price">22.00 $</div>
+					<div class="dish-data">
+					<p><span>Lorem ipsum dolor sit amet</span></p>
+					<p>Consectetur adipisicing elit. Aspernatur in maiores</p>
+					</div>
+					<div class="dish-price">21.00 $</div>
+			</div>
+	</div>
+
+
+
+
+
+
+	<!-- <section id="section_menus">
 		<h1>Menu</h1>
 		<div class="menus-item-1">
-			<div class="main-menu-1"><img src="img/img-menu-3.jpg" alt="image"></div>
+			<div class="main-menu-1"><img src="" alt="image"></div>
 			<div class="main-menu-01"><img src="img/menus-1.jpg" alt="image"></div>
 		</div>
-	</section>
-
+	</section> -->
+<!-- <script src="main.js"></script> -->
+<script src="js/menus.js"></script>
 </body>
 </html>
