@@ -69,11 +69,11 @@ ul li:hover ul{
 }
 
 
-/*  ul li i{
+  ul li span{
 	color: #292929;
 	float: right;
 	padding-left: 10px;
-} */
+} 
  
 nav div{
 	background: lightgrey;
@@ -95,7 +95,7 @@ nav ul{
 	padding: 0.5em 0;
 	opacity: none;
 }
-#nav ul ul li{
+/* #nav ul ul li{
 	display: block;
 	color: #fff;
 }
@@ -104,7 +104,7 @@ nav ul{
 	background-color: #fff;
 	color: #000;
 }
- #nav ul li:hover /* ul li:hover */{
+ #nav ul li:hover ul li:hover{
 	background: grey;
 }
 #nav ul ul a{
@@ -114,7 +114,7 @@ nav ul{
 #nav ul li ul:hover li {
 	background-color: white;
 	color: #000;
-}
+} */
 /* --------------------------------HEADER */
 .header{
 	flex-wrap: wrap;/* перенос строки */
@@ -708,7 +708,7 @@ input[type=submit] {
 	font-family: 'Great Vibes', cursive;
 	font-size: 50pt;
 	color: #f8b864;
-	margin: 0.5em;
+	margin: 0;
 	text-align: center;
 	text-shadow: 1px 1px 1px #000;
 	font-weight: normal;
