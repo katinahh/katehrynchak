@@ -95,31 +95,12 @@ nav ul{
 	padding: 0.5em 0;
 	opacity: none;
 }
-/* #nav ul ul li{
-	display: block;
-	color: #fff;
-}
 
-#nav ul ul: hover li{
-	background-color: #fff;
-	color: #000;
-}
- #nav ul li:hover ul li:hover{
-	background: grey;
-}
-#nav ul ul a{
-	background-color: grey;
-	color: #000;
-}
-#nav ul li ul:hover li {
-	background-color: white;
-	color: #000;
-} */
 /* --------------------------------HEADER */
 .header{
-	flex-wrap: wrap;/* перенос строки */
-	justify-content: space-between; /* Прижимает содержимое к краям; */
-	align-items: center; /* Выравнивает по центру */
+	flex-wrap: wrap;	
+	justify-content: space-between;
+	align-items: center; 
 	background-image: url(img/main_img.png);
 	width: 100%;
 	height: 100vh;
@@ -165,13 +146,13 @@ nav ul{
 	margin-bottom: 130px;
 	margin: auto;
 }
-/* Масштаб картинки відносно батьківського елементу */
+
 .slider .item img{
 	object-fit: cover;
 	width: 100%;
 	height: 100vh;
 }
-/* Кнопки prew & next */
+
 .slider .prev, .slider .next{
 	cursor: pointer;
 	position: absolute;
@@ -226,8 +207,6 @@ nav ul{
 	background-color: #aaa;
 }
 
-/* Анимация слайдов */
-
 .slider .item {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -264,9 +243,7 @@ nav ul{
 	vertical-align: top;
 	text-align: center;
 	margin: 0 1em ; 
-	border: 2px #000;
-	/* border-right-style: dotted;
-		border-left-style: dotted; */	
+	border: 2px #000;	
 	height: 50vh;
 }
 .par_item:hover{
@@ -373,7 +350,7 @@ nav ul{
 /* ---------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
 ------------------------menus--------------------------------- */
-/* =================MENUS 02/06/19 =============*/
+
 .conteiner h1{
 	border-bottom: 2px solid #f8b864;
 }
@@ -438,24 +415,6 @@ nav ul{
 	background-image: url(img/img-menu-1.jpg);
 	height: 75vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ===============E V E N T S==================*/
 #mainEvents{
 	background-image: url(img/events.jpg);
@@ -546,7 +505,7 @@ nav ul{
 	font: 50pt 'Great Vibes', cursive;
 	color: #f8b864; 
 	margin: 0.5em;
-	text-shadow: 1px 1px 1px #000; /*            +++ */
+	text-shadow: 1px 1px 1px #000; 
 
 }
 .main_gift{
@@ -652,24 +611,6 @@ input[type=submit] {
 	float: right;
 	width: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -----------------------------------CONTACTS*/
 .img-contact{
